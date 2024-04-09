@@ -1,0 +1,14 @@
+Node3D
+AnimationTree
+SubViewport
+ProgressBar
+Timer
+MeshInstance3D
+CollisionShape3D
+Area3D
+AnimationPlayer
+CharacterBody3D
+NavigationAgent3D
+NavigationRegion3D
+ShapeCast3D
+RayCast3D

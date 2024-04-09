@@ -1,0 +1,28 @@
+[gd_scene load_steps=6 format=3 uid="uid://bgeh3m4bn3rsk"]
+
+[ext_resource type="Shader" uid="uid://ewh2a1a0qyt2" path="res://assets/water/water.tres" id="1_f3p31"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_22oea"]
+render_priority = 0
+shader = ExtResource("1_f3p31")
+shader_parameter/ColorParameter = Color(0.070588, 0.262745, 0.380392, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_0lfdk"]
+material = SubResource("ShaderMaterial_22oea")
+size = Vector2(10, 10)
+subdivide_width = 20
+subdivide_depth = 20
+
+[sub_resource type="SphereMesh" id="SphereMesh_n8eon"]
+
+[sub_resource type="Skin" id="Skin_3gx71"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("PlaneMesh_0lfdk")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 2.46271, -0.215162, 1.64981)
+mesh = SubResource("SphereMesh_n8eon")
+skin = SubResource("Skin_3gx71")
